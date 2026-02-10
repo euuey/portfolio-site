@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-VULCAN | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .sub-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 120px 35px;
+      }
+      .sub-page h1 {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .sub-page p {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        color: #888;
+      }
+      .back-link {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 16px;
+        color: #3b82f6;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: opacity 0.3s;
+      }
+      .back-link:hover {
+        opacity: 0.6;
+      }
+      .project-meta {
+        display: flex;
+        gap: 16px;
+        padding: 24px 0;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .meta-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: #111;
+        border-radius: 16px;
+        padding: 28px 20px;
+      }
+      .meta-label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .meta-value {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .project-section {
+        width: 100%;
+        max-width: 1200px;
+        padding: 40px 0;
+        border-top: 1px solid #222;
+      }
+      .section-label {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #3b82f6;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .section-desc {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ccc;
+        line-height: 1.8;
+      }
+      .section-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+      .section-list li {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        color: #ccc;
+        line-height: 1.6;
+        padding-left: 20px;
+        position: relative;
+      }
+      .section-list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #3b82f6;
+      }
+      .section-purpose {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html#project">PROJECT</a></li>
+          <li><a href="index.html#contact">INTRODUCTION</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="sub-page">
+      <video src="img/t-vulcan_02.mp4" autoplay muted loop playsinline style="width: 100%; max-width: 1200px; border-radius: 20px;"></video>
+      <h1>T-VULCAN</h1>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Team</span>
+          <span class="meta-value">3명</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Contribution</span>
+          <span class="meta-value">70%</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Duration</span>
+          <span class="meta-value">30일</span>
+        </div>
+      </div>
+      <div class="project-section">
+        <span class="section-label">레드 포인트 컬러를 활용한 강인한 브랜드 아이덴티티 구축</span>
+        <p class="section-desc">
+          메인 비주얼은 자동차 부품의 디테일 컷과 함께<br />
+          레드 포인트 컬러를 사용하여 브랜드의 핵심 이미지를 강조했습니다.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <span class="section-label">레드는 다음의 이미지를 전달합니다.</span>
+        <ul class="section-list">
+          <li>강력한 성능</li>
+          <li>에너지와 속도감</li>
+          <li>정밀하고 공격적인 기술력</li>
+        </ul>
+        <p class="section-purpose">
+          → 이를 통해 단순한 부품 업체가 아닌<br />
+          기술 중심의 전문 브랜드라는 인상을 첫 화면에서 전달하도록 설계했습니다.
+        </p>
+      </div>
+
+      <img src="img/tvc_03.png" alt="T-VULCAN" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
+      <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+    </main>
+  </body>
+</html>
