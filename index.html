@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#introduction">INTRODUCTION</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="menu-btn" aria-label="Menu">
+          <span class="menu-line menu-line-1"></span>
+          <span class="menu-line menu-line-2"></span>
+        </button>
+      </nav>
+    </header>
+
+    <div class="fullscreen-nav">
+      <ul class="fullscreen-nav-list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#introduction">INTRODUCTION</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <main class="hero">
+      <h1 class="hero-title">
+        <span class="line1">CRAFTING STORIES</span>
+        <span class="line2-wrap">
+          <span class="line-divider"></span>
+          <span class="line2">THROUGH DESIGN</span>
+        </span>
+      </h1>
+
+      <div class="hero-video" aria-hidden="true">
+        <video id="heroVideo" autoplay muted loop playsinline>
+          <source src="img/main.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <a href="#introduction" class="scroll-down">
+        <span class="scroll-down-text">Scroll Down</span>
+        <span class="scroll-down-arrow">&darr;</span>
+      </a>
+
+      <p class="hero-description">
+        Design is not decoration, but a way of shaping meaning.<br />
+        I focus on structure, context, and decisions behind the surface,<br />
+        turning complex conditions into clear and usable stories.
+      </p>
+    </main>
+
+    <section class="intro" id="introduction">
+      <div class="intro-label reveal">
+        <span class="intro-num">01</span>
+        <span class="intro-tag">Introduction</span>
+      </div>
+      <p class="intro-text reveal">
+        디자인과 개발을 함께 다루며,<br />아이디어를 구조화하고 시각적 경험으로
+        구현하는 디자이너입니다.
+      </p>
+    </section>
+
+    <section class="process">
+      <div class="process-item reveal">
+        <div class="process-content">
+          <h3 class="process-title">맥락을 이해합니다</h3>
+          <p class="process-desc">문제의 배경과 조건을 먼저 정리합니다.</p>
+        </div>
+        <div class="process-icon">
+          <img src="img/main_icon_01.svg" alt="" />
+        </div>
+      </div>
+      <div class="process-divider"></div>
+
+      <div class="process-item reveal">
+        <div class="process-content">
+          <h3 class="process-title">구조 설계를 진행합니다.</h3>
+          <p class="process-desc">
+            화면을 그리기 전에 정보의 흐름과 우선순위를 정리합니다. 구조가
+            명확해야 디자인도 흔들리지 않습니다.
+          </p>
+        </div>
+        <div class="process-icon">
+          <img src="img/main_icon_02.svg" alt="" />
+        </div>
+      </div>
+      <div class="process-divider"></div>
+
+      <div class="process-item reveal">
+        <div class="process-content">
+          <h3 class="process-title">시각적인 부분을 정리합니다.</h3>
+          <p class="process-desc">
+            사용자의 행동을 기준으로 인터랙션과 화면 전환을 설계합니다. 불필요한
+            요소는 덜어냅니다.
+          </p>
+        </div>
+        <div class="process-icon">
+          <img src="img/main_icon_03.svg" alt="" />
+        </div>
+      </div>
+      <div class="process-divider"></div>
+
+      <div class="process-item reveal">
+        <div class="process-content">
+          <h3 class="process-title">구현하며 다듬습니다.</h3>
+          <p class="process-desc">
+            디자인과 개발을 분리하지 않고 만들면서 계속 수정합니다. 사용 가능한
+            결과물을 목표로 합니다.
+          </p>
+        </div>
+        <div class="process-icon">
+          <img src="img/main_icon_04.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-text"
+          >2025 Works &copy;&nbsp;&nbsp;&nbsp;A curated collection of this
+          year's creative projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span class="marquee-text"
+          >2025 Works &copy;&nbsp;&nbsp;&nbsp;A curated collection of this
+          year's creative projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span class="marquee-text"
+          >2025 Works &copy;&nbsp;&nbsp;&nbsp;A curated collection of this
+          year's creative projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+    </section>
+
+    <section class="projects" id="project">
+      <div class="project-card project-left reveal">
+        <div class="project-media">
+          <img src="img/t-vulcan_01.png" alt="T-Vulcan" class="project-img" />
+          <div class="project-overlay">
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-name">T-VULCAN</span>
+          <span class="project-role">메인, 서브페이지 디자인 및 퍼블리싱</span>
+          <span class="project-date">2025.11 ~ 2025.12</span>
+        </div>
+      </div>
+
+      <div class="project-card project-right reveal">
+        <div class="project-media">
+          <img
+            src="img/build_01.png"
+            alt="부동산 분양 사이트"
+            class="project-img"
+          />
+          <div class="project-overlay">
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-name">부동산 분양 사이트</span>
+          <span class="project-role">메인, 서브페이지 디자인 및 퍼블리싱</span>
+          <span class="project-date">2025.11 ~ 2025.12</span>
+        </div>
+      </div>
+
+      <div class="project-card project-left reveal">
+        <div class="project-media">
+          <img
+            src="img/rdt_01.png"
+            alt="RDT RealDesignTech"
+            class="project-img"
+          />
+          <div class="project-overlay">
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-name">RDT RealDesignTech</span>
+          <span class="project-role">메인, 서브페이지 디자인 및 퍼블리싱</span>
+          <span class="project-date">2025.11 ~ 2025.12</span>
+        </div>
+      </div>
+
+      <div class="project-card project-right reveal">
+        <div class="project-media">
+          <img
+            src="img/raum_01.png"
+            alt="RAUM Architecture"
+            class="project-img"
+          />
+          <div class="project-overlay">
+            <span class="project-arrow">&rarr;</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-name">RAUM Architecture</span>
+          <span class="project-role">메인, 서브페이지 디자인 및 퍼블리싱</span>
+          <span class="project-date">2025.11 ~ 2025.12</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial">
+      <h2 class="editorial-title reveal">Editorial Design</h2>
+      <div class="editorial-divider reveal"></div>
+
+      <div class="editorial-card reveal">
+        <div class="editorial-media">
+          <img src="img/page_01.png" alt="CGV 이벤트 페이지" />
+        </div>
+        <div class="editorial-info">
+          <span class="editorial-name">CGV</span>
+          <span class="editorial-role">이벤트 상세페이지 디자인 <span class="editorial-tag">개인프로젝트</span></span>
+          <span class="editorial-date">2025.05 ~ 2025.05</span>
+        </div>
+      </div>
+
+      <div class="editorial-card editorial-card-left reveal">
+        <div class="editorial-media">
+          <img src="img/yhd.png" alt="YHD" />
+        </div>
+        <div class="editorial-info">
+          <span class="editorial-name">YHD</span>
+          <span class="editorial-role">그래픽 디자인 <span class="editorial-tag">개인프로젝트</span></span>
+          <span class="editorial-date">2025.05 ~ 2025.05</span>
+        </div>
+      </div>
+
+      <div class="editorial-row reveal">
+        <div class="editorial-card-item">
+          <div class="editorial-media">
+            <img src="img/poster.png" alt="경동 사내 라디오 이벤트 포스터" />
+          </div>
+          <div class="editorial-info">
+            <span class="editorial-name">경동</span>
+            <span class="editorial-role">사내 라디오 이벤트 포스터 디자인</span>
+            <span class="editorial-date">2025.08 ~ 2025.08</span>
+          </div>
+        </div>
+
+        <div class="editorial-card-item">
+          <div class="editorial-media">
+            <img src="img/cata.png" alt="ALTIVASE 기업소개 카탈로그" />
+          </div>
+          <div class="editorial-info">
+            <span class="editorial-name">ALTIVASE</span>
+            <span class="editorial-role">기업소개 카탈로그 디자인</span>
+            <span class="editorial-date">2024.05 ~ 2024.06</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="character">
+      <div class="character-card reveal">
+        <div class="editorial-media">
+          <img src="img/character.png" alt="LH 캐릭터 리디자인" />
+        </div>
+        <div class="editorial-info">
+          <span class="editorial-name">CHARACTER DESIGN</span>
+          <span class="editorial-role">LH 캐릭터 리디자인 <span class="editorial-tag">개인프로젝트</span></span>
+          <span class="editorial-date">2025.05 ~ 2025.05</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-intro" id="contact">
+      <div class="intro-label reveal">
+        <span class="intro-num">07</span>
+        <span class="intro-tag">Contact</span>
+      </div>
+      <p class="contact-text reveal">의미 있는 작업을 함께하고 싶습니다</p>
+    </section>
+
+    <section class="contact">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <span class="contact-title">CONTACT</span>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-top">
+            <div class="contact-photo">
+              <img src="img/photo.png" alt="김한나" />
+            </div>
+            <div class="contact-card-right">
+              <div class="contact-profile">
+                <span class="contact-sub">디자이너 | 퍼블리셔</span>
+                <span class="contact-name">김 한 나</span>
+              </div>
+              <div class="contact-details">
+                <div class="contact-info-block">
+                  <span class="contact-label">Contact</span>
+                  <p>📞 010 - 3793 - 2028</p>
+                  <p>✉ byuha2028@gmail.com</p>
+                  <p>🌐@euuny</p>
+                </div>
+                <div class="contact-info-block">
+                  <span class="contact-label">Skills</span>
+                  <p>
+                    Photoshop&nbsp;&nbsp;Illustrator&nbsp;&nbsp;Figma&nbsp;&nbsp;Adobe
+                    XD
+                  </p>
+                  <p>
+                    HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JQUERY&nbsp;&nbsp;Claude AI
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card-bottom">
+            <div class="contact-info-block">
+              <span class="contact-label">career</span>
+              <div class="contact-row">
+                <span class="contact-date-col">2021. 11 ~ 2022. 01</span>
+                <span>원광대학교병원 순환기내과 병동 근무</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-date-col">2022. 11 ~ 2024. 11</span>
+                <span>지구컴즈 편집디자인팀 근무</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-date-col">2025. 05 ~ 2026. 03</span>
+                <span>알바트로스픽쳐스 웹디자인팀 근무</span>
+              </div>
+            </div>
+            <div class="contact-info-block">
+              <span class="contact-label">education</span>
+              <div class="contact-row">
+                <span class="contact-date-col">2022. 03 ~ 2022. 07</span>
+                <span>그린컴퓨터아카데미 편집디자인과정 수료</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-date-col">2024. 12 ~ 2025. 02</span>
+                <span>디자인나스 웹디자인&웹 과정 수강</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 HNK. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="js.js"></script>
+  </body>
+</html>
