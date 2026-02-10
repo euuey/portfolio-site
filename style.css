@@ -947,6 +947,13 @@ body {
     width: 60vw;
   }
 
+  .scroll-down {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    top: 32vh;
+  }
+
   .hero-description {
     left: 24px;
     bottom: 8vh;
