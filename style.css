@@ -907,6 +907,49 @@ body {
     font-size: 18px;
     line-height: 26px;
   }
+
+  .process {
+    width: 90%;
+  }
+
+  .project-card {
+    max-width: 70%;
+  }
+
+  .editorial-card {
+    max-width: 70%;
+  }
+
+  .editorial-card-left {
+    max-width: 70%;
+  }
+
+  .character-card {
+    max-width: 70%;
+  }
+
+  .contact-card {
+    padding: 40px;
+  }
+
+  .contact-card-top {
+    gap: 24px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-card-bottom {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 
 @media (max-width: 768px) {
