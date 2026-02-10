@@ -31,18 +31,92 @@
         font-weight: 700;
         color: #fff;
       }
+      .project-tags {
+        display: flex;
+        gap: 8px;
+      }
+      .project-tag {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background: #333;
+        padding: 6px 14px;
+        border-radius: 4px;
+      }
       .sub-page p {
         font-family: 'Pretendard', sans-serif;
         font-size: 18px;
         color: #888;
+      }
+      .site-link {
+        display: inline-block;
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background: #3b82f6;
+        padding: 14px 36px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background 0.3s;
+        margin-top: 40px;
+      }
+      .site-link:hover {
+        background: #2563eb;
+      }
+      .project-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 40px;
+      }
+      .nav-prev,
+      .nav-next {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 28px;
+        border: 1px solid #333;
+        border-radius: 50px;
+        transition: background 0.3s, border-color 0.3s;
+      }
+      .nav-prev:hover,
+      .nav-next:hover {
+        background: #1a1a1a;
+        border-color: #555;
+      }
+      .nav-arrow {
+        font-weight: 700;
+      }
+      .list-link {
+        display: inline-block;
+        font-family: 'Pretendard', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        padding: 14px 36px;
+        border: 1px solid #333;
+        border-radius: 50px;
+        transition: background 0.3s, border-color 0.3s;
+        margin-top: 40px;
+      }
+      .list-link:hover {
+        background: #1a1a1a;
+        border-color: #555;
       }
       .back-link {
         font-family: 'Albert Sans', sans-serif;
         font-size: 16px;
         color: #3b82f6;
         text-decoration: none;
-        margin-top: 20px;
         transition: opacity 0.3s;
+        align-self: flex-start;
+        margin-top: 40px;
       }
       .back-link:hover {
         opacity: 0.6;
@@ -142,7 +216,7 @@
       </a>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="index.html#project">PROJECT</a></li>
+          <li><a href="projects.html">PROJECT</a></li>
           <li><a href="index.html#contact">INTRODUCTION</a></li>
         </ul>
       </nav>
@@ -151,6 +225,10 @@
     <main class="sub-page">
       <video src="img/t-vulcan_02.mp4" autoplay muted loop playsinline style="width: 100%; max-width: 1200px; border-radius: 20px;"></video>
       <h1>T-VULCAN</h1>
+      <div class="project-tags">
+        <span class="project-tag">웹디자인</span>
+        <span class="project-tag">퍼블리싱</span>
+      </div>
       <div class="project-meta">
         <div class="meta-item">
           <span class="meta-label">Team</span>
@@ -187,6 +265,12 @@
       </div>
 
       <img src="img/tvc_03.png" alt="T-VULCAN" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
+      <a href="http://t-vulcan.com/" target="_blank" class="site-link">사이트 바로가기 &rarr;</a>
+      <div class="project-nav">
+        <a href="raum.html" class="nav-prev"><span class="nav-arrow">&lt;</span> Prev</a>
+        <a href="build.html" class="nav-next">Next <span class="nav-arrow">&gt;</span></a>
+      </div>
+      <a href="projects.html" class="list-link">&larr; 목록으로</a>
       <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
     </main>
   </body>

@@ -31,10 +31,67 @@
         font-weight: 700;
         color: #fff;
       }
+      .project-tags {
+        display: flex;
+        gap: 8px;
+      }
+      .project-tag {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background: #333;
+        padding: 6px 14px;
+        border-radius: 4px;
+      }
       .sub-page p {
         font-family: 'Pretendard', sans-serif;
         font-size: 18px;
         color: #888;
+      }
+      .project-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 40px;
+      }
+      .nav-prev,
+      .nav-next {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 28px;
+        border: 1px solid #333;
+        border-radius: 50px;
+        transition: background 0.3s, border-color 0.3s;
+      }
+      .nav-prev:hover,
+      .nav-next:hover {
+        background: #1a1a1a;
+        border-color: #555;
+      }
+      .nav-arrow {
+        font-weight: 700;
+      }
+      .list-link {
+        display: inline-block;
+        font-family: 'Pretendard', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        padding: 14px 36px;
+        border: 1px solid #333;
+        border-radius: 50px;
+        transition: background 0.3s, border-color 0.3s;
+        margin-top: 40px;
+      }
+      .list-link:hover {
+        background: #1a1a1a;
+        border-color: #555;
       }
       .back-link {
         font-family: 'Albert Sans', sans-serif;
@@ -47,6 +104,92 @@
       .back-link:hover {
         opacity: 0.6;
       }
+      .project-meta {
+        display: flex;
+        gap: 16px;
+        padding: 24px 0;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .meta-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: #111;
+        border-radius: 16px;
+        padding: 28px 20px;
+      }
+      .meta-label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .meta-value {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .project-section {
+        width: 100%;
+        max-width: 1200px;
+        padding: 40px 0;
+        border-top: 1px solid #222;
+      }
+      .section-label {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #3b82f6;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .section-desc {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ccc;
+        line-height: 1.8;
+      }
+      .section-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+      .section-list li {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        color: #ccc;
+        line-height: 1.6;
+        padding-left: 20px;
+        position: relative;
+      }
+      .section-list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #3b82f6;
+      }
+      .section-purpose {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.8;
+      }
     </style>
   </head>
   <body>
@@ -56,15 +199,61 @@
       </a>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="index.html#project">PROJECT</a></li>
+          <li><a href="projects.html">PROJECT</a></li>
           <li><a href="index.html#contact">INTRODUCTION</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="sub-page">
+      <video src="img/raum_02.mp4" autoplay muted loop playsinline style="width: 100%; max-width: 1200px; border-radius: 20px;"></video>
       <h1>RAUM Architecture</h1>
-      <p>준비 중입니다.</p>
+      <div class="project-tags">
+        <span class="project-tag">웹디자인</span>
+        <span class="project-tag">퍼블리싱</span>
+      </div>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Team</span>
+          <span class="meta-value">3명</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Contribution</span>
+          <span class="meta-value">60%</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Duration</span>
+          <span class="meta-value">20일</span>
+        </div>
+      </div>
+      <div class="project-section">
+        <span class="section-label">공간의 본질을 전달하는 미니멀 건축 사이트</span>
+        <p class="section-desc">
+          건축 사무소의 정체성을 반영하여<br />
+          여백과 구조적 레이아웃 중심의 디자인으로<br />
+          공간의 깊이와 절제된 미학을 전달하도록 설계했습니다.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <span class="section-label">디자인이 전달하는 핵심 가치</span>
+        <ul class="section-list">
+          <li>공간과 여백을 활용한 시각적 안정감</li>
+          <li>건축물의 형태미를 강조하는 레이아웃</li>
+          <li>절제된 컬러와 타이포그래피를 통한 전문성 표현</li>
+        </ul>
+        <p class="section-purpose">
+          → 건축이 가진 구조적 아름다움을<br />
+          웹 환경에서도 동일하게 경험할 수 있도록 설계했습니다.
+        </p>
+      </div>
+
+      <img src="img/raum_03.png" alt="RAUM Architecture" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
+      <div class="project-nav">
+        <a href="rdt.html" class="nav-prev"><span class="nav-arrow">&lt;</span> Prev</a>
+        <a href="tvulcan.html" class="nav-next">Next <span class="nav-arrow">&gt;</span></a>
+      </div>
+      <a href="projects.html" class="list-link">&larr; 목록으로</a>
       <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
     </main>
   </body>

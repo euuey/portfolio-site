@@ -3,23 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const line1 = document.querySelector('.hero-title .line1');
   const line2Wrap = document.querySelector('.hero-title .line2-wrap');
 
-  line1.style.opacity = '0';
-  line1.style.transform = 'translateX(-100px)';
-  line1.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+  if (line1 && line2Wrap) {
+    line1.style.opacity = '0';
+    line1.style.transform = 'translateX(-100px)';
+    line1.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
 
-  line2Wrap.style.opacity = '0';
-  line2Wrap.style.transform = 'translateX(100px)';
-  line2Wrap.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+    line2Wrap.style.opacity = '0';
+    line2Wrap.style.transform = 'translateX(100px)';
+    line2Wrap.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
 
-  setTimeout(() => {
-    line1.style.opacity = '1';
-    line1.style.transform = 'translateX(0)';
-  }, 200);
+    setTimeout(() => {
+      line1.style.opacity = '1';
+      line1.style.transform = 'translateX(0)';
+    }, 200);
 
-  setTimeout(() => {
-    line2Wrap.style.opacity = '1';
-    line2Wrap.style.transform = 'translateX(0)';
-  }, 400);
+    setTimeout(() => {
+      line2Wrap.style.opacity = '1';
+      line2Wrap.style.transform = 'translateX(0)';
+    }, 400);
+  }
 
   // Scroll reveal (character by character) - shared logic
   function splitChars(el) {
@@ -67,44 +69,49 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Intro text
-  setupScrollReveal(
-    document.querySelector('.intro-text'),
-    document.querySelector('.intro')
-  );
+  const introText = document.querySelector('.intro-text');
+  const introSection = document.querySelector('.intro');
+  if (introText && introSection) {
+    setupScrollReveal(introText, introSection);
+  }
 
   // Contact text (faster reveal for shorter text)
-  setupScrollReveal(
-    document.querySelector('.contact-text'),
-    document.querySelector('.contact-intro'),
-    'fast'
-  );
+  const contactText = document.querySelector('.contact-text');
+  const contactIntro = document.querySelector('.contact-intro');
+  if (contactText && contactIntro) {
+    setupScrollReveal(contactText, contactIntro, 'fast');
+  }
 
   // Video playback speed + fade-in from below
   const heroVideo = document.getElementById('heroVideo');
   if (heroVideo) heroVideo.playbackRate = 0.7;
 
   const heroVideoWrap = document.querySelector('.hero-video');
-  heroVideoWrap.style.transition = 'opacity 1.2s ease-out, transform 1.2s ease-out';
+  if (heroVideoWrap) {
+    heroVideoWrap.style.transition = 'opacity 1.2s ease-out, transform 1.2s ease-out';
 
-  setTimeout(() => {
-    heroVideoWrap.style.opacity = '1';
-    heroVideoWrap.style.transform = 'translate(-50%, -50%) translateY(0)';
-  }, 1000);
+    setTimeout(() => {
+      heroVideoWrap.style.opacity = '1';
+      heroVideoWrap.style.transform = 'translate(-50%, -50%) translateY(0)';
+    }, 1000);
+  }
 
   const heroDesc = document.querySelector('.hero-description');
-  heroDesc.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+  if (heroDesc) {
+    heroDesc.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
 
-  const descObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        heroDesc.style.opacity = '1';
-        heroDesc.style.transform = 'translateY(0)';
-        descObserver.unobserve(heroDesc);
-      }
-    });
-  }, { threshold: 0.3 });
+    const descObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          heroDesc.style.opacity = '1';
+          heroDesc.style.transform = 'translateY(0)';
+          descObserver.unobserve(heroDesc);
+        }
+      });
+    }, { threshold: 0.3 });
 
-  descObserver.observe(heroDesc);
+    descObserver.observe(heroDesc);
+  }
 
   // Fullscreen menu toggle
   const menuBtn = document.querySelector('.menu-btn');
@@ -112,19 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const header = document.querySelector('.header');
 
-  menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('active');
-    fullscreenNav.classList.toggle('open');
-    header.classList.toggle('nav-open');
-  });
-
-  fullscreenNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      menuBtn.classList.remove('active');
-      fullscreenNav.classList.remove('open');
-      header.classList.remove('nav-open');
+  if (menuBtn && fullscreenNav) {
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      fullscreenNav.classList.toggle('open');
+      header.classList.toggle('nav-open');
     });
-  });
+
+    fullscreenNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        fullscreenNav.classList.remove('open');
+        header.classList.remove('nav-open');
+      });
+    });
+  }
 
   // Section reveal on scroll (resets when out of view)
   const revealObserver = new IntersectionObserver((entries) => {

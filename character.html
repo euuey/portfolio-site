@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RDT RealDesignTech | Portfolio</title>
+    <title>CHARACTER DESIGN | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,33 +49,6 @@
         font-size: 18px;
         color: #888;
       }
-      .project-nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-        margin-top: 40px;
-      }
-      .nav-prev,
-      .nav-next {
-        font-family: 'Albert Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        text-decoration: none;
-        padding: 12px 28px;
-        border: 1px solid #333;
-        border-radius: 50px;
-        transition: background 0.3s, border-color 0.3s;
-      }
-      .nav-prev:hover,
-      .nav-next:hover {
-        background: #1a1a1a;
-        border-color: #555;
-      }
-      .nav-arrow {
-        font-weight: 700;
-      }
       .list-link {
         display: inline-block;
         font-family: 'Pretendard', sans-serif;
@@ -104,36 +77,27 @@
       .back-link:hover {
         opacity: 0.6;
       }
-      .project-meta {
-        display: flex;
-        gap: 16px;
-        padding: 24px 0;
+      .project-section {
         width: 100%;
         max-width: 1200px;
+        padding: 40px 0;
+        border-top: 1px solid #222;
       }
-      .meta-item {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        background: #111;
-        border-radius: 16px;
-        padding: 28px 20px;
-      }
-      .meta-label {
-        font-family: 'Albert Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        color: #666;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-      }
-      .meta-value {
-        font-family: 'Albert Sans', sans-serif;
-        font-size: 28px;
+      .section-label {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 16px;
         font-weight: 700;
-        color: #fff;
+        color: #3b82f6;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .section-desc {
+        font-family: 'Pretendard', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ccc;
+        line-height: 1.8;
       }
     </style>
   </head>
@@ -151,30 +115,19 @@
     </header>
 
     <main class="sub-page">
-      <video src="img/RealDesignTech.mp4" autoplay muted loop playsinline style="width: 100%; max-width: 1200px; border-radius: 20px;"></video>
-      <h1>RDT RealDesignTech</h1>
+      <img src="img/character.png" alt="LH 캐릭터 리디자인" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
+      <h1>CHARACTER DESIGN</h1>
       <div class="project-tags">
-        <span class="project-tag">웹디자인</span>
-        <span class="project-tag">퍼블리싱</span>
+        <span class="project-tag">캐릭터디자인</span>
+        <span class="project-tag">개인프로젝트</span>
       </div>
-      <div class="project-meta">
-        <div class="meta-item">
-          <span class="meta-label">Team</span>
-          <span class="meta-value">3명</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Contribution</span>
-          <span class="meta-value">60%</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Duration</span>
-          <span class="meta-value">14일</span>
-        </div>
-      </div>
-      <img src="img/rdt_03.png" alt="RDT RealDesignTech" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
-      <div class="project-nav">
-        <a href="build.html" class="nav-prev"><span class="nav-arrow">&lt;</span> Prev</a>
-        <a href="raum.html" class="nav-next">Next <span class="nav-arrow">&gt;</span></a>
+      <div class="project-section">
+        <span class="section-label">LH 캐릭터 리디자인</span>
+        <p class="section-desc">
+          LH 캐릭터를 새로운 시각으로 리디자인한 개인 프로젝트입니다.<br />
+          기존 캐릭터의 정체성을 유지하면서도<br />
+          현대적인 감각과 친근한 인상을 더하는 것을 목표로 작업했습니다.
+        </p>
       </div>
       <a href="projects.html" class="list-link">&larr; 목록으로</a>
       <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
