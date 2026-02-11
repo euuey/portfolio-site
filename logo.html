@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>윤회당 | Portfolio</title>
+    <title>LOGO DESIGN | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,33 +48,6 @@
         font-family: 'Pretendard', sans-serif;
         font-size: 18px;
         color: #888;
-      }
-      .project-nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-        margin-top: 40px;
-      }
-      .nav-prev,
-      .nav-next {
-        font-family: 'Albert Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        text-decoration: none;
-        padding: 12px 28px;
-        border: 1px solid #333;
-        border-radius: 50px;
-        transition: background 0.3s, border-color 0.3s;
-      }
-      .nav-prev:hover,
-      .nav-next:hover {
-        background: #1a1a1a;
-        border-color: #555;
-      }
-      .nav-arrow {
-        font-weight: 700;
       }
       .list-link {
         display: inline-block;
@@ -126,6 +99,37 @@
         color: #ccc;
         line-height: 1.8;
       }
+      .project-meta {
+        display: flex;
+        gap: 16px;
+        padding: 24px 0;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .meta-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: #111;
+        border-radius: 16px;
+        padding: 28px 20px;
+      }
+      .meta-label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: #555;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .meta-value {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        color: #fff;
+      }
       @media (max-width: 768px) {
         .sub-page {
           padding: 100px 20px;
@@ -133,6 +137,13 @@
         }
         .sub-page h1 {
           font-size: 28px;
+        }
+        .project-meta {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .meta-value {
+          font-size: 22px;
         }
         .project-section {
           padding: 24px 0;
@@ -142,14 +153,6 @@
         }
         .section-desc br {
           display: none;
-        }
-        .project-nav {
-          margin-top: 28px;
-        }
-        .nav-prev,
-        .nav-next {
-          padding: 10px 20px;
-          font-size: 14px;
         }
         .list-link {
           padding: 12px 28px;
@@ -176,22 +179,37 @@
     </header>
 
     <main class="sub-page">
-      <img src="img/yhd.png" alt="YHD" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
-      <h1>윤회당</h1>
+      <img src="img/logo_thumb.png" alt="로고 디자인" style="width: 100%; max-width: 1200px; border-radius: 20px;" />
+      <h1>LOGO DESIGN</h1>
       <div class="project-tags">
-        <span class="project-tag">그래픽디자인</span>
+        <span class="project-tag">로고디자인</span>
+        <span class="project-tag">개인프로젝트</span>
+      </div>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Team</span>
+          <span class="meta-value">1명</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Contribution</span>
+          <span class="meta-value">100%</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Duration</span>
+          <span class="meta-value">1일</span>
+        </div>
       </div>
       <div class="project-section">
-        <span class="section-label">그래픽 디자인</span>
+        <span class="section-label">로고 디자인</span>
         <p class="section-desc">
-          윤회당 브랜드를 주제로 한 그래픽 디자인 작업입니다.<br />
-          타이포그래피와 컬러를 활용하여<br />
-          브랜드의 감성과 아이덴티티를 시각적으로 표현했습니다.
+          개인 프로젝트로 진행한 로고 디자인 작업입니다.<br />
+          브랜드의 아이덴티티를 효과적으로 전달할 수 있도록<br />
+          심플하고 임팩트 있는 로고를 디자인했습니다.
         </p>
       </div>
-      <div class="project-nav">
-        <a href="cgv.html" class="nav-prev"><span class="nav-arrow">&lt;</span> Prev</a>
-        <a href="kyungdong.html" class="nav-next">Next <span class="nav-arrow">&gt;</span></a>
+      <div style="width: 100%; max-width: 1200px; display: flex; gap: 60px; align-items: center;">
+        <img src="img/logo_design.svg" alt="로고 디자인 상세" style="width: 35%; object-fit: contain;" />
+        <img src="img/logo_mockup.jpg" alt="로고 목업" style="width: 50%; object-fit: cover;" />
       </div>
       <a href="projects.html" class="list-link">&larr; 목록으로</a>
       <a href="index.html" class="back-link">&larr; Back to Portfolio</a>

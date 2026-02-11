@@ -99,6 +99,37 @@
         color: #ccc;
         line-height: 1.8;
       }
+      .project-meta {
+        display: flex;
+        gap: 16px;
+        padding: 24px 0;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .meta-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: #111;
+        border-radius: 16px;
+        padding: 28px 20px;
+      }
+      .meta-label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: #555;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .meta-value {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        color: #fff;
+      }
       @media (max-width: 768px) {
         .sub-page {
           padding: 100px 20px;
@@ -106,6 +137,13 @@
         }
         .sub-page h1 {
           font-size: 28px;
+        }
+        .project-meta {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .meta-value {
+          font-size: 22px;
         }
         .project-section {
           padding: 24px 0;
@@ -147,6 +185,20 @@
         <span class="project-tag">캐릭터디자인</span>
         <span class="project-tag">개인프로젝트</span>
       </div>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Team</span>
+          <span class="meta-value">1명</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Contribution</span>
+          <span class="meta-value">100%</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Duration</span>
+          <span class="meta-value">3일</span>
+        </div>
+      </div>
       <div class="project-section">
         <span class="section-label">LH 캐릭터 리디자인</span>
         <p class="section-desc">
@@ -155,6 +207,16 @@
           현대적인 감각과 친근한 인상을 더하는 것을 목표로 작업했습니다.
         </p>
       </div>
+      <div style="margin-top: 40px; width: 100%; max-width: 1200px; overflow: hidden; background-color: #000; position: relative; display: flex; justify-content: center; align-items: flex-end; gap: 40px; padding: 40px 40px; border-top: 2px solid rgba(255,255,255,0.8); border-bottom: 2px solid rgba(255,255,255,0.8);">
+        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;" preserveAspectRatio="none">
+          <line x1="0" y1="25%" x2="100%" y2="25%" stroke="rgba(255,255,255,0.6)" stroke-width="1" stroke-dasharray="8,6" />
+          <line x1="0" y1="50%" x2="100%" y2="50%" stroke="rgba(255,255,255,0.6)" stroke-width="1" stroke-dasharray="8,6" />
+          <line x1="0" y1="75%" x2="100%" y2="75%" stroke="rgba(255,255,255,0.6)" stroke-width="1" stroke-dasharray="8,6" />
+        </svg>
+        <img src="img/character_03.svg" alt="LH 캐릭터 크기 비교 (대)" style="max-width: 60%; object-fit: contain; position: relative; z-index: 1;" />
+        <img src="img/character_04.svg" alt="LH 캐릭터 크기 비교 (소)" style="max-width: 30%; object-fit: contain; position: relative; z-index: 1;" />
+      </div>
+      <img src="img/character_05.svg" alt="LH 캐릭터 표정 모음" style="margin-top: 16px; width: 100%; max-width: 1200px; border-radius: 20px;" />
       <a href="projects.html" class="list-link">&larr; 목록으로</a>
       <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
     </main>
